@@ -5,6 +5,7 @@ import org.assertj.core.api.AbstractBigDecimalAssert;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
+import java.util.Optional;
 
 import java.sql.SQLOutput;
 import java.util.List;
@@ -17,6 +18,7 @@ class MemoryMemberRepositoryTest {
 
     @AfterEach
     public void afterEach(){
+
         repository.clearStore();
     }
 
